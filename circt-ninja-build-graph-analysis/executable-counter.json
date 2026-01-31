@@ -1,0 +1,15 @@
+{
+  "/home/jw2858/miniconda3/envs/circt/bin/c++": 3313,
+  "/home/jw2858/miniconda3/envs/circt/bin/cmake": 1717,
+  "/home/jw2858/miniconda3/envs/circt/bin/llvm-ar": 460,
+  "/home/jw2858/miniconda3/envs/circt/bin/llvm-ranlib": 460,
+  "/home/jw2858/miniconda3/envs/circt/bin/cc": 22,
+  "cd": 1259,
+  "/home/jw2858/circt-main/build/bin/llvm-min-tblgen": 30,
+  "/home/jw2858/circt-main/build/bin/mlir-tblgen": 1182,
+  "/home/jw2858/circt-main/build/bin/mlir-linalg-ods-yaml-gen": 1,
+  "/home/jw2858/circt-main/build/bin/circt-tblgen": 1,
+  "/home/jw2858/circt-main/build/bin/mlir-src-sharder": 21,
+  "/home/jw2858/circt-main/build/bin/llvm-tblgen": 18,
+  "/usr/bin/python3.12": 1
+}
