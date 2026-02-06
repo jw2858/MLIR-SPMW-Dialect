@@ -31,3 +31,14 @@ Converts the build graph's absolute paths into their project-relative equivalent
 
 Analyzes the relpath build graph to group output files by their extension (e.g., `.o`, `.a`, binaries). For each extension, creates a mapping from targets to their source inputs, and writes this analysis to `target-extensions-to-targets-to-sources.json`.
 
+### `06_circt_opt_dependency_analysis.py`
+
+Performs a dependency layer analysis of the main CIRCT binary (`build/bin/circt-opt`). Walks backward from the `circt-opt` binary in the build graph `relpath-build-graph.json` using reverse BFS, producing `circt-opt-dependencies.json`, extension breakdowns for each dependency layer. Useful for tracking how each component of the binary is built up from its source dependencies.
+
+### `07_analyze_a_file_sources.py`
+
+Finds all static library (`.a`) files in the build graph `relpath-build-graph.json`. For each archive, reports the file extensions and lists all sources (by extension) that were used to assemble the archive to `a-file-sources.json`. Useful for analyzing how each `.a` file is composed in the build.
+
+### `08_analyze_o_file_sources.py`
+
+Finds all object (`.o`) files in the build graph `relpath-build-graph.json`. For each object file, reports the file extensions and lists all sources (by extension) that were used to produce that object to `o-file-sources.json`. Enables fine-grained analysis of object-file-level build provenance.
